@@ -1,0 +1,20 @@
+.products-list-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+  margin: 0 auto;
+  max-width: 1500px;
+}
+
+@media (max-width: 1024px) {
+  .products-list-container {
+    justify-content: center;
+  }
+}
+
+@media (max-width: 768px) {
+  .products-list-container {
+    flex-direction: column;
+    align-items: center; /* Центрирование карточек по вертикали */
+  }
+}

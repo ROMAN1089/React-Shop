@@ -1,0 +1,111 @@
+.cartItems {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  padding: 20px;
+  background-color: #f7f7f7;
+  border-radius: 12px;
+  max-height: 500px;
+  overflow-y: auto;
+}
+
+.cartCard {
+  display: flex;
+  border: 1px solid #ddd;
+  padding: 20px;
+  border-radius: 12px;
+  background-color: #fff;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.cartCard:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+}
+
+.cartCardImage img {
+  width: 100px;
+  height: 100px;
+  object-fit: cover;
+  border-radius: 12px;
+}
+
+.cartCardDetails {
+  margin-left: 20px;
+  flex: 1;
+}
+
+.cartCardTitle {
+  font-size: 18px;
+  font-weight: 600;
+  color: #333;
+}
+
+.cartCardDescription {
+  font-size: 14px;
+  color: #777;
+  margin-top: 8px;
+  line-height: 1.5;
+}
+
+.cartCardPrice .price {
+  font-size: 18px;
+  font-weight: bold;
+  color: #000;
+  margin-top: 10px;
+}
+
+.cartCardActions {
+  display: flex;
+  gap: 12px;
+  margin-top: 10px;
+}
+
+.cartCardQuantity {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 12px;
+  margin-top: 10px;
+}
+
+.cartCardActions {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 16px;
+}
+
+.cartCardActions .removeButton,
+.cartCardActions .favoriteButton {
+  padding: 10px 20px;
+  border: none;
+  border-radius: 6px;
+  font-size: 14px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  flex: 1;
+  margin: 0 5px;
+  max-width: 120px;
+  text-align: center;
+}
+
+.cartCardActions .removeButton {
+  background-color: #e74c3c;
+  color: #fff;
+}
+
+.cartCardActions .removeButton:hover {
+  background-color: #c0392b;
+}
+
+.cartCardActions .favoriteButton {
+  background-color: #3498db;
+  color: #fff;
+}
+
+.cartCardActions .favoriteButton:hover {
+  background-color: #2980b9;
+}

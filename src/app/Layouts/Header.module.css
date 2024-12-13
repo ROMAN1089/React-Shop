@@ -1,0 +1,47 @@
+/* Основной стиль для header */
+.header {
+  padding: 16px;
+  border-bottom: 1px solid #ccc;
+  margin-bottom: 16px;
+  background-color: #f9f9f9;
+  display: flex;
+  justify-content: center; /* Центрируем контент по горизонтали */
+}
+
+/* Стили для nav */
+.nav {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
+  gap: 16px;
+}
+
+.nav .logo {
+  flex-shrink: 0;
+}
+
+
+.nav .searchBar {
+  flex-grow: 1;
+}
+
+/* Стили для кнопки корзины */
+.nav .cartButton {
+  flex-shrink: 0; /* Кнопка корзины сохраняет свой размер */
+}
+
+.nav a {
+  text-decoration: none;
+  color: #333;
+  font-size: 16px;
+  font-weight: 500;
+  padding: 8px 12px;
+  border-radius: 4px;
+  transition: background-color 0.2s, color 0.2s;
+}
+
+.nav a:hover {
+  background-color: #007bff;
+  color: #fff;
+}
